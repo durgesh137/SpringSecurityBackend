@@ -1,0 +1,16 @@
+1. since spring-security is included therefore without authorization token it should not be accessible
+curl http://localhost:8080/hello
+
+curl response-
+{"timestamp":"2024-03-02T15:26:11.815+0000",
+"status":401,
+"error":"Unauthorized",
+"message":"Unauthorized","path":"/hello"}
+
+2. here spring security requires user with default password in curl to access hello endpoint
+curl -u user:116a9372-fecc-4488-bd3b-24606c6b6af2 http://localhost:8080/hello
+
+curl response-
+hello people!
+
+3.

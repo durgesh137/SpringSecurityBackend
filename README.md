@@ -5,3 +5,5 @@
 2. use java8 version
 3. inbuilt tomcat was not included so added spring-boot-starter-tomcat
 
+# basic-auth
+this branch includes using inbuilt default authentication of sprig security
