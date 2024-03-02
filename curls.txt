@@ -13,4 +13,13 @@ curl -u user:116a9372-fecc-4488-bd3b-24606c6b6af2 http://localhost:8080/hello
 curl response-
 hello people!
 
-3.
+3. using basic authorization token in curl how actual requests are made-
+3.1 create base64 representation
+echo -n user:9c2c082d-a80e-46fd-9a1e-0cd5378b7b4a | base64
+=>dXNlcjo5YzJjMDgyZC1hODBlLTQ2ZmQtOWExZS0wY2Q1Mzc4YjdiNGE=
+=> here -n means no trailing new line should be added
+=> above command in linux gives base64 data
+=> online url https://www.base64encode.org/ also does the same
+
+3.2 curl authorization header for basic authentication
+curl -H "Authorization: Basic dXNlcjo5YzJjMDgyZC1hODBlLTQ2ZmQtOWExZS0wY2Q1Mzc4YjdiNGE="  localhost:8080/hello
