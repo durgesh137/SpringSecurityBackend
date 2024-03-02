@@ -23,3 +23,6 @@ echo -n user:9c2c082d-a80e-46fd-9a1e-0cd5378b7b4a | base64
 
 3.2 curl authorization header for basic authentication
 curl -H "Authorization: Basic dXNlcjo5YzJjMDgyZC1hODBlLTQ2ZmQtOWExZS0wY2Q1Mzc4YjdiNGE="  localhost:8080/hello
+
+4. overriding default approach
+curl -u sam:12345 http://localhost:8080/hello

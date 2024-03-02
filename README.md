@@ -35,3 +35,6 @@ Generally, we don’t use HTTP Basic authentication without at least HTTPS for c
 detailed definition of HTTP Basic in RFC 7617 (https://tools.ietf.org/html/rfc7617).
 
 
+## IN-MEMORY approach to configure users
+=> this approach is not recommend
+=> In production for managing users database is used
